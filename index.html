@@ -1,0 +1,224 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Facebook</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"><i class="fab fa-facebook"></i></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="login">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 order-md-last">
+              <div class="image">
+                <img src="./images/login.jpg" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-md-5 order-md-first">
+              <div class="container">
+                <form id="form">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="You can also use you username instead of the E-mail"
+                    />
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                  <div class="mb-3 password">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      :type="fieldType"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    />
+                    <i class="fas fa-eye" @click="show" title="Show The Password"></i>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1">
+                      Remember Me
+                    </label>
+                  </div>
+                  <button type="button" class="button">Login</button>
+                  <a href="#signup" class="d-block" style="color: #252525">
+                    Don't Have Any Account?
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="signup" id="signup">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="image">
+                <img src="./images/signup.jpg" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="container">
+                <div class="via d-flex justify-content-around">
+                  <img
+                    src="./images/search.png"
+                    width="30"
+                    class="m-2"
+                    title="SignUp Via Google"
+                  />
+                  <img
+                    src="./images/yahoo.png"
+                    width="30"
+                    class="m-2"
+                    title="SignUp Via Yahoo"
+                  />
+                  <img
+                    src="./images/outlook.png"
+                    width="30"
+                    class="m-2"
+                    title="SignUp Via Outlook"
+                  />
+                </div>
+                <form id="form2">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail2" class="form-label"
+                      >Full Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail2"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail3" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail3"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail4" class="form-label"
+                      >Username</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail4"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-3 password">
+                    <label for="exampleInputPassword5" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      :type="fieldType"
+                      class="form-control password"
+                      id="exampleInputPassword5"
+                    />
+                    <i class="fas fa-eye" @click="show" title="Show The Password"></i>
+                  </div>
+                  <div class="mb-3 password">
+                    <label for="exampleInputPassword6" class="form-label"
+                      >Repeat Your Password Again</label
+                    >
+                    <input
+                      :type="fieldType"
+                      class="form-control password"
+                      id="exampleInputPassword6"
+                    />
+                    <i class="fas fa-eye" title="Show The Password"></i>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck2"
+                    />
+                    <label class="form-check-label" for="exampleCheck2">
+                      Lorem ipsum dolor amet consectetur adipisicing elit.
+                    </label>
+                  </div>
+                  <button type="button" class="button">SignUp</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h6 class="text-center mt-5" style="padding: 20px 0">
+        CREATED BY AHMED RAGAB 2021
+      </h6>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #eee 60%, #ddd 20%);
+}
+
+.navbar-expand-lg .navbar-nav {
+  margin-left: auto;
+  width: 50%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+  margin-left: auto;
+}
+
+.navbar-light .navbar-brand i {
+  background: linear-gradient(120deg, #ccc 60%, #ddd 20%);
+  color: #252525;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+}
+
+.button {
+  border: none;
+  margin: 10px auto 30px auto;
+  border-radius: 7px;
+  background: linear-gradient(120deg, #212121, #535353);
+  padding: 8px;
+  min-width: 130px;
+  height: 42px;
+  color: #eee;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  letter-spacing: 2px;
+  min-width: 140px;
+}
+
+.login,
+.signup {
+  min-height: 100vh;
+}
+
+.login .form-control,
+.signup .form-control {
+  background-color: transparent !important;
+}
+
+.login .form-control:focus,
+.signup .form-control:focus {
+  border: none;
+}
+
+.login .password,
+.signup .password {
+  position: relative;
+}
+
+.login .password .fa-eye,
+.signup .password .fa-eye {
+  position: absolute;
+  bottom: 15%;
+  right: 15px;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.login .password .fa-eye.show,
+.signup .password .fa-eye.show {
+  opacity: 1;
+}
+
+.login .content,
+.signup .content {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.login .content label,
+.signup .content label {
+  cursor: pointer;
+}
+
+.login .content .form-control::-webkit-input-placeholder,
+.signup .content .form-control::-webkit-input-placeholder {
+  font-size: 12px;
+  color: #5353538c;
+}
+
+.login .content .form-control:-ms-input-placeholder,
+.signup .content .form-control:-ms-input-placeholder {
+  font-size: 12px;
+  color: #5353538c;
+}
+
+.login .content .form-control::-ms-input-placeholder,
+.signup .content .form-control::-ms-input-placeholder {
+  font-size: 12px;
+  color: #5353538c;
+}
+
+.login .content .form-control::placeholder,
+.signup .content .form-control::placeholder {
+  font-size: 12px;
+  color: #5353538c;
+}
+
+.login .content .image img,
+.signup .content .image img {
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.login .content form,
+.signup .content form {
+  margin-top: 10%;
+}
+
+.login .content form .form-check-input,
+.signup .content form .form-check-input {
+  background-color: #30303056;
+  border: none;
+}
+
+.login .content form .form-check-input:focus,
+.signup .content form .form-check-input:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.signup {
+  margin-top: 5%;
+}
+
+.signup .form-check-input {
+  background-color: #2b2b2bad;
+  border: none;
+}
+
+.signup .form-check-input:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.signup .content {
+  margin-top: 0;
+}
+
+.signup .via {
+  border-radius: 5px;
+  margin-top: 0px;
+  padding: 5px;
+  -webkit-filter: drop-shadow(0.5px 4.5px 2px #4d4d4d);
+          filter: drop-shadow(0.5px 4.5px 2px #4d4d4d);
+}
+
+.signup img {
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .login form {
+    margin-top: 80% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup .via {
+    margin-top: 20px;
+  }
+  .form-control::-webkit-input-placeholder {
+    font-size: 10px !important;
+  }
+  .form-control:-ms-input-placeholder {
+    font-size: 10px !important;
+  }
+  .form-control::-ms-input-placeholder {
+    font-size: 10px !important;
+  }
+  .form-control::placeholder {
+    font-size: 10px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
